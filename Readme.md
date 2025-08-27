@@ -1,10 +1,6 @@
 Project iniated with Github...
 
-<<<<<<< HEAD
-=======
-Project iniated with Github...
-
->>>>>>> aab4ac7 (Initial commit 3)
+ 
 # Initialize a new Git repo
 git init    
 
@@ -22,7 +18,4 @@ git remote add origin https://github.com/Ayyappan1502/dockerimagehub.git
 
 # Push code to GitHub and set upstream
 git push -u origin main
-<<<<<<< HEAD
-
-=======
->>>>>>> aab4ac7 (Initial commit 3)
+ 
