@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual env
+venv/
+.env/
+.venv/
+
+# Docker
+*.log
+data/
+*.pid
+
+# VSCode / IDE
+.vscode/
+.idea/
