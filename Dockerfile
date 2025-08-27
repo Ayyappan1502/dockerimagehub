@@ -9,8 +9,7 @@ RUN apk add --no-cache curl
 
 
 # Upgrade pip & setuptools
-RUN pip install --upgrade pip setuptools wheel
-
+RUN pip install --upgrade pip 
 COPY requirements.txt .
 
 RUN pip install  -r requirements.txt
