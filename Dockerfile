@@ -2,9 +2,18 @@ FROM  python:3.8-slim
 
 WORKDIR /app
 
-COPY . /app/
+RUN apk add --no-cache curl
 
-RUN pip install Flask pytest
+
+# first copy the dependencies only
+
+
+# Upgrade pip & setuptools
+RUN pip install --upgrade pip setuptools wheel
+
+COPY requirements.txt .
+
+RUN pip install  -r requirements.txt
 
 EXPOSE  7070
 
