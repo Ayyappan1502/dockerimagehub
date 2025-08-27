@@ -2,8 +2,15 @@ FROM  python:3.8-slim
 
 WORKDIR /app
 
+COPY . /app/
+
+ 
+
 # first copy the dependencies only
-RUN pip install --upgrade pip
+
+
+# Upgrade pip & setuptools
+RUN pip install --upgrade pip 
 
 COPY requirements.txt .
 
