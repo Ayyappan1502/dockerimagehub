@@ -7,7 +7,7 @@ on :
     branches: [ "main" ]
   
 jobs:
-  build:
+  build-and-test:
     runs-on: ubuntu-latest
 
     steps:
@@ -51,6 +51,5 @@ jobs:
         push: true
         tags: ${{ secrets.DOCKER_USERNAME }}/flasktest-app:latest
     - name: Image digest
-      run: 
-      echo "Image digest: ${{ steps.build-and-push.outputs.digest }}"
+      run: echo "Image digest: ${{ steps.build-and-push.outputs.digest }}"
 
