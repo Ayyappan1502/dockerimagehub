@@ -2,10 +2,6 @@ FROM  python:3.8-slim
 
 WORKDIR /app
 
-RUN apk add --no-cache curl
-
-
-
 # first copy the dependencies only
 RUN pip install --upgrade pip
 
